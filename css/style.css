@@ -22,4 +22,137 @@
 
 * {
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
+
+:root {
+  --primary-color: #FF0000;
+  --background-color: #28272C;
+  --background-color-2: #FFFFFF;
+  --title-color: #000000;
+
+
+  --primary-font: "Nunito Sans", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+
+  --btn-padding: 22px 55px;
+
+  --container-width: 1088px;
+  --btn-width: 142px;
+  --btn-height: 40px;
+}
+
+.header-container,
+.intro-container {
+  width: 1088px;
+}
+
+/*---------------HEADER--------------------- */
+
+.section-top {
+  background-image: url(../image/component.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1372px;
+  height: 807px;
+  color: white;
+
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+/*.header {
+  max-width: 1088px;
+}*/
+
+.header-container {
+  background-color: #00000066;
+  width: 1372px;
+  height: 93px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0 23px 0;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.car {
+  font-family: var(--primary-font);
+  font-size: 35px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+.sharing {
+  font-family: var(--primary-font);
+  font-size: 35px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header-navigation {
+  display: flex;
+}
+.header-navigation li {
+  display: inline-block;
+  text-align: center;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+
+.header-navigation a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 36px 40px 40px 40px;
+  font-weight:600;
+}
+
+.header-navigation a:hover {
+  background: #FFFFFF33;
+} 
+
+/*----------------HEADER-INTRO----------------*/
+
+.intro {
+  height: calc(807px - 93px); 
+  background-color: #000000;
+  opacity: 30%; 
+}
+
+.intro-container {
+  height: calc(807px - 93px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-contant {
+  height: calc(807px - 93px); 
+}
+
+
+
+
+
+
+/*-------------BLOG-----------------------*/
+/*.blog {
+  background-color: #FFFFFF;
+  width: 1366px;
+  height: 3008px;
+  display: flex;
+}*/
