@@ -1,65 +1,66 @@
-
+/*--------------GENERAL and VARIABLES------------*/
 * {
-  box-sizing: border-box;
+  padding:0;
   margin: 0 auto;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #FF0000;
-  --background-color: #28272C;
-  --background-color-2: #FFFFFF;
-  --title-color: #000000;
-
-
   --primary-font: "Nunito Sans", sans-serif;
-  --secondary-font: "Open Sans", sans-serif;
-
-  --btn-padding: 22px 55px;
-
-  --container-width: 1088px;
-  --btn-width: 142px;
-  --btn-height: 40px;
+  --secondary-font: "Opens Snas", sans-serif;
+  --primary-color: #FF0000;
+  --secondary-color: #FFFFFF;
+  --third-color: rgba(0, 0, 0, 0.3);
+  --fourth-color: #00000066;
+  --fifth-color: #FFFFFF33;
+  --sixth-color: #00000040;
+  --seventh-color: #FFFFFF29;
+  --eighth-color: #6A6A6A;
+  --tenth-color: #28272C;
+  --eleventh-color: #B2B2B2;
+  --twelweth-color: #D1D1D1;
+  --shadow-color: #FF00004D;
 }
-
-.header-container,
-.intro-container {
-  width: 1088px;
-}
-
-/*---------------HEADER--------------------- */
 
 .section-top {
   background-image: url(../image/component.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1372px;
-  height: 807px;
-  color: white;
-
+  width: 100vw;
+  height: calc(100vh - 55px);
   display: flex;
   flex-direction: column;
 }
 
-/*.header {
+.container {
   max-width: 1088px;
-}*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: var(--fourth-color);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height:93px;
+}
 
 .header-container {
-  background-color: #00000066;
-  width: 1372px;
-  height: 93px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  color: white;
-  padding: 20px 0 23px 0;
+ 
 }
 
 .header-logo-title {
   display: flex;
   align-items: center;
+  font-family: var(--primary-font);
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .logo {
@@ -67,77 +68,95 @@
 }
 
 .car {
-  font-family: var(--primary-font);
-  font-size: 35px;
-  font-weight: bolder;
-  text-transform: uppercase;
   color: var(--primary-color);
   margin-right: 5px;
 }
 
 .sharing {
-  font-family: var(--primary-font);
-  font-size: 35px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--secondary-color);
 }
+
+
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
+
 .header-navigation li {
   display: inline-block;
-  text-align: center;
+}
+
+.header-navigation a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 36px 40px 40px 40px;
+  font-weight:550;
+
   font-family: var(--primary-font);
   text-transform: uppercase;
 }
 
-.header-navigation a {
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 36px 40px 40px 40px;
-  font-weight:600;
-}
-
 .header-navigation a:hover {
-  background: #FFFFFF33;
+  background: var(--fifth-color);
 } 
 
-/*----------------HEADER-INTRO----------------*/
+/*------------------HEADER - Intro------------------*/
 
 .intro {
-  height: calc(807px - 93px); 
-  background-color: #000000;
-  opacity: 30%; 
-  display: flex;
-  justify-content: center;
   flex-grow: 1;
-
-
+  background-color: var(--third-color);
+  display: flex;
+  text-align: center;
 }
 
-/*
 .intro-container {
-  height: calc(807px - 93px); 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.intro-contant {
-  height: calc(807px - 93px); 
+.intro-content {
+  height: 297px;
+  width:1046px;
+  font-family: var(--primary-font);
 }
-*/
 
+.intro-content h1 {
+  font-size: 90px;
+  font-weight:600;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
 
+.intro-content p {
+  font-size: 16px;
+  color: var(--secondary-color);
+  line-height: 22px;
+  margin-bottom: 76px;
+}
 
-
-
-/*-------------BLOG-----------------------*/
-/*.blog {
-  background-color: #FFFFFF;
-  width: 1366px;
-  height: 3008px;
+.button-group {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*.button-primary {
+  padding: 40px;
+}*/
+
+
+
+
+
+.next {
+  position: absolute;
+  bottom: 27.5px;
+  left: calc(50% - 27.5px);
+  padding:;
+  background-color: ;
+  border-radius:;
 }
