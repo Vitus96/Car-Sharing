@@ -321,3 +321,136 @@
 
 /*--------------CONTACT-----------------*/
 
+.contact {
+  background-color: var(--secondary-color);
+  max-height: 643px;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin: 65px 0 35px 0;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bold;
+
+} 
+
+.contact-image-formular {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image-formular img {
+  
+}
+
+
+form {
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="textarea"] {
+  padding: 8px;
+  margin: 0 0 20px 16px;
+  width: 444px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--twelweth-color);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="textarea"]::placeholder {
+  color: var(--eleventh-color);
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="textarea"]:focus-visible {
+  border-color: var(--primary-color);
+}
+
+
+
+
+label[for="checkbox"] {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin: 24px 10px 0 16px;
+  border: border: 1px solid var(--twelweth-color);
+  border-radius: 8px;
+}
+
+/*
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+*/
+
+label[for="checkbox"] span {
+  margin-left: 10px;
+  width: 412px;
+  height: 71px;
+  font-family: var(--secondary-font);
+  color: var(--eleventh-color);
+  font-size: 10px;
+  line-height: 14px;
+}
+
+
+/*---------------FOOTER---------------- */
+
+footer {
+  background-color: var(--tenth-color);
+  height: 232px;
+  display: flex;
+  color: white;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.footer-title {
+  display: flex;
+}
+
+.footer-columns {
+  display: flex;
+}
+
+.footer-logo img {
+  margin-right: 7.5px;
+}
+
+.footer-contant {
+  display: flex;
+  align-items: center;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.car-2 {
+  margin-right: 8px;
+  color: var(--primary-color);
+}
