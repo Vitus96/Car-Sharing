@@ -90,7 +90,7 @@
 .header-navigation a {
   color: var(--secondary-color);
   text-decoration: none;
-  padding: 36px 40px 40px 40px;
+  padding: 38px 40px 38px 40px;
   font-weight: 550;
 
   font-family: var(--primary-font);
@@ -145,22 +145,20 @@
 }
 
 .button-group button {
-  display: inline-block;
   border-radius: 40px;
-  height: 66px;
-  width: 220px;
+  padding: 22px 55px;
   border: none;
 }
 
 .btn-1 a,
 .btn-2 a {
-  /*display: inline-block;*/
   text-decoration: none;
   text-transform: uppercase;
-  padding: 22px;
   font-weight: bold;
+}
 
-
+.btn-1 {
+  box-shadow: var(--shadow-color) 0 3px 6px;
 }
 
 .btn-1 {
@@ -180,10 +178,11 @@
   position: absolute;
   bottom: 27.5px;
   left: calc(50% - 27.5px);
-  bottom: calc(1.8% - 17px);
+  bottom: calc(1.8% - 12px);
   padding: 17px;
   background-color: var(--primary-color);
   border-radius: 50%;
+  box-shadow: var(--shadow-color) 0 3px 6px;
 }
 
 /*----------------BLOG-------------------*/
@@ -193,18 +192,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 700px;
-
-
+  /*max-height: 700px;*/
 }
 
+
+/* ----------BLOG - NADPIS---------------*/
 .blog-title {
   margin: 91px 0 35px 0;
   font-size: 35px;
   text-transform: uppercase;
   font-family: var(--primary-font);
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.blog-title::before,
+.blog-title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  flex-grow: 1;
+  background-color: var(--primary-color);
+}
+
+.blog-title span {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+/*-------------------------------------*/
+
 
 .blog-contant {
   display: flex;
@@ -218,7 +237,6 @@
 .blog-contant-column-2,
 .blog-contant-column-3 {
   color: var(--eighth-color);
-  margin-bottom: 100px;
 }
 
 .blog-contant-column-1 h2,
@@ -242,6 +260,7 @@
   border: none;
   flex-grow: 1;
   margin-bottom: 100px;
+  box-shadow: var(--shadow-color) 0 3px 6px;
 
 }
 
@@ -258,7 +277,7 @@
 
 .service {
   background-color: var(--tenth-color);
-  max-height: 643px;
+  /*max-height: 643px; - není třeba dávat, výška určena vnitřními elementy*/
   display: flex;
   justify-content: center;
   text-align: center;
@@ -307,6 +326,7 @@
   border: none;
   flex-grow: 1;
   margin-bottom: 100px;
+  box-shadow: var(--shadow-color) 0 3px 6px;
 }
 
 .service-contant-column-1 a,
@@ -323,7 +343,7 @@
 
 .contact {
   background-color: var(--secondary-color);
-  max-height: 643px;
+  /*max-height: 643px;*/
   display: flex;
   justify-content: center;
   /*align-items: center;*/
@@ -358,12 +378,20 @@ form {
 }
 
 input[type="text"],
-input[type="email"],
-input[type="textarea"] {
+input[type="email"] {
   padding: 8px;
   margin: 0 0 20px 16px;
   width: 444px;
   height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--twelweth-color);
+}
+
+input[type="textarea"] {
+  padding: 8px;
+  margin: 0 0 20px 16px;
+  width: 444px;
+  height: 140px;
   border-radius: 8px;
   border: 1px solid var(--twelweth-color);
 }
@@ -374,14 +402,14 @@ input[type="textarea"]::placeholder {
   color: var(--eleventh-color);
 }
 
+
+
 input[type="text"]:focus-visible,
 input[type="email"]:focus-visible,
 input[type="textarea"]:focus-visible {
   border-color: var(--primary-color);
+  box-shadow: var(--shadow-color) 0 3px 6px;
 }
-
-
-
 
 label[for="checkbox"] {
   display: flex;
@@ -415,6 +443,30 @@ label[for="checkbox"] span {
   line-height: 14px;
 }
 
+.contact-formular {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-formular button {
+  border: 1px solid var(--primary-color);
+  padding: 11px 52px;
+  border-radius: 40px;
+  margin: 20px 0 65px 0;
+  background-color: var(--secondary-color);
+  box-shadow: var(--shadow-color) 0 3px 6px;
+}
+
+.contact-formular a {
+  font-family: var(--primary-font);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+
 
 /*---------------FOOTER---------------- */
 
@@ -422,7 +474,7 @@ footer {
   background-color: var(--tenth-color);
   height: 232px;
   display: flex;
-  color: white;
+  padding-top: 40px;
 }
 
 .contain {
@@ -439,10 +491,24 @@ footer {
   display: flex;
 }
 
-.footer-logo img {
-  margin-right: 7.5px;
+.footer-logo {
+  align-items: center;
 }
 
+.footer-logo img {
+  margin-right: 7.5px;
+  text-transform: uppercase;
+  background-size: ;
+}
+
+.footer-logo span {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: var(--primary-font);
+  
+}
+
+/*
 .footer-contant {
   display: flex;
   align-items: center;
@@ -450,7 +516,55 @@ footer {
   text-transform: uppercase;
   font-weight: bolder;
 }
+*/
+
+
 .car-2 {
   margin-right: 8px;
   color: var(--primary-color);
+}
+
+.sharing-2 {
+  color: var(--secondary-color);
+}
+
+.footer-column-1,
+.footer-column-2 {
+  margin-top: 22px;
+}
+
+.footer-column-1 {
+  margin-right: 140px;
+}
+
+.footer-columns li {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 7px;
+}
+
+.footer-column-1 a,
+.footer-column-2 a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.footer-columns a:hover {
+  color: var(--primary-color)
+}
+
+.footer-columns span {
+  align-self: flex-end;
+  flex-grow: 1;
+  text-align: right;
+  font-size: 12px;
+  color: var(--twelweth-color);
+  font-family: var(--primary-font);
+}
+
+.car-2 {
+  color: var(--primary-color); /*ve skutečnosti pravidlo určené v HEADERu*/
 }
