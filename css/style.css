@@ -470,6 +470,8 @@ input[type="radio"] {
 }
 */
 
+
+/*------------FORMULÁŘ - Checkbox-----------*/
 label[for="checkbox"] span {
   margin-left: 10px;
   width: 412px;
