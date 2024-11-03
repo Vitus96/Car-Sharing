@@ -1,4 +1,4 @@
-/*--------------GENERAL and VARIABLES------------*/
+/*------------GENERAL and VARIABLES----------*/
 * {
   padding: 0;
   margin: 0 auto;
@@ -101,8 +101,7 @@
   background: var(--fifth-color);
 }
 
-/*------------------HEADER - Intro------------------*/
-
+/*-------------HEADER - Intro-------------*/
 .intro {
   flex-grow: 1;
   background-color: var(--third-color);
@@ -178,12 +177,13 @@
   position: absolute;
   bottom: 27.5px;
   left: calc(50% - 27.5px);
-  bottom: calc(1.8% - 12px);
+  bottom: calc(1.8% - 30px);
   padding: 17px;
   background-color: var(--primary-color);
   border-radius: 50%;
   box-shadow: var(--shadow-color) 0 3px 6px;
 }
+
 
 /*----------------BLOG-------------------*/
 .blog {
@@ -193,8 +193,8 @@
   justify-content: center;
   align-items: center;
   /*max-height: 700px;*/
+  /*display: relative;*/
 }
-
 
 /* ----------BLOG - NADPIS---------------*/
 .blog-title {
@@ -212,18 +212,17 @@
 .blog-title::after {
   content: "";
   display: block;
+  width: 50px;
   height: 3px;
-  flex-grow: 1;
   background-color: var(--primary-color);
 }
 
 .blog-title span {
-  display: inline-block;
-  padding: 0 10px 0 10px;
+display: inline-block;
+padding: 10px 10px;
+
 }
-
 /*-------------------------------------*/
-
 
 .blog-contant {
   display: flex;
@@ -273,8 +272,8 @@
   font-size: 16px;
 }
 
-/*-----------------SERVICE---------------*/
 
+/*-----------------SERVICE---------------*/
 .service {
   background-color: var(--tenth-color);
   /*max-height: 643px; - není třeba dávat, výška určena vnitřními elementy*/
@@ -284,14 +283,34 @@
   flex-direction: column;
 }
 
-.service h2 {
+
+/* ----------SERVICE - NADPIS---------------*/
+.service-title {
   margin: 60px 0 75px 0;
   text-align: center;
   font-family: var(--primary-font);
   font-size: 35px;
   color: var(--secondary-color);
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.service-title::before,
+.service-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.service-title span {
+  display: inline-block;
+  padding: 10px 10px;
+}
+/*-------------------------------------------*/
 
 .service-contant {
   display: flex;
@@ -349,25 +368,45 @@
   /*align-items: center;*/
 }
 
-.contact-container h2 {
+
+/*---------CONTACT - NADPIS------------*/
+.contact-title {
   text-align: center;
   margin: 65px 0 35px 0;
   font-family: var(--primary-font);
   text-transform: uppercase;
   font-size: 35px;
   font-weight: bold;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } 
+
+.contact-title::before,
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.contact-title span {
+  display: inline-block;
+  padding: 10px 10px;
+}
+/*--------------------------------------*/
 
 .contact-image-formular {
   display: flex;
   justify-content: center;
 }
 
+/*
 .contact-image-formular img {
   
 }
-
+*/
 
 form {
   display: flex;
@@ -401,8 +440,6 @@ input[type="email"]::placeholder,
 input[type="textarea"]::placeholder {
   color: var(--eleventh-color);
 }
-
-
 
 input[type="text"]:focus-visible,
 input[type="email"]:focus-visible,
