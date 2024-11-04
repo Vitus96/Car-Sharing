@@ -472,7 +472,47 @@ input[type="radio"] {
 
 
 /*------------FORMULÁŘ - Checkbox-----------*/
-label[for="checkbox"] span {
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+}
+ 
+.checkbox span {
+  height: 60px;
+  flex-shrink: 0;
+  flex-basis: 60px;
+  border: 10px solid cornflowerblue;
+  cursor: pointer;
+  margin-right: 15px;
+  /*dodělat*/
+  
+}
+
+.checkbox input:checked + span {
+  background-image: url(../image/component\ \(11\).png);
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox {
   margin-left: 10px;
   width: 412px;
   height: 71px;
@@ -531,13 +571,15 @@ footer {
 }
 
 .footer-logo {
+  display: flex;
   align-items: center;
 }
 
 .footer-logo img {
   margin-right: 7.5px;
   text-transform: uppercase;
-  background-size: ;
+  position: relative;
+  bottom: 3px;
 }
 
 .footer-logo span {
